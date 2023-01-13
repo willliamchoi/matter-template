@@ -16,7 +16,7 @@ class Character extends Entity {
                 fillStyle: '#0000ff'
             },
             label: this.key,
-            density: 10
+            density: 0.001
         });
         this.group = 'character';
     }

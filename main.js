@@ -4,6 +4,8 @@ import { tickCounter } from './lib/tickCounter.js';
 import { global } from './lib/global.js';
 import Character from './Character.js';
 import Platform from './Platform.js';
+import blob from './blob.js';
+ 
 
 function main() {
 
@@ -53,11 +55,13 @@ function main() {
     window.addEventListener('keyup', e => keyMapper(e))
 
     // Add entities here
-    const player = new Character(50, 50, 50, 50);
+    const player = new Character(70, 50, 50, 50);
     player.add();
-
     const ground = new Platform(100, 600, 400, 30);
     ground.add();
+    
 
+    const myPlayer = new blob()
+    myPlayer.add();
 }
 window.onload = main;
