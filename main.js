@@ -24,8 +24,8 @@ function main() {
         element: document.body,
         engine: engine,
         options: {
-            width: 800,
-            height: 640,
+            width: 1900,
+            height: 900,
             wireframes: false
         }
     });
@@ -55,12 +55,22 @@ function main() {
     window.addEventListener('keyup', e => keyMapper(e))
 
     // Add entities here
-    const player = new Character(70, 50, 50, 50);
-    player.add();
-    const ground = new Platform(100, 600, 400, 30);
-    ground.add();
     
-
+    const player = new Character(400, 500, 50, 50);
+    player.add();
+    const Platform1 = new Platform(100, 900, 4000, 50);
+    Platform1.add();
+    const platform2 = new Platform(600, 800, 900, 50 );
+    platform2.add(); 
+    const Platform3 = new Platform(0,900,10,2000);
+    Platform3.add();
+    
+    const Platform5 = new Platform(400,200,10,500);
+    Platform5.add();
+    const Platform6 = new Platform(1900,200,10,2000);
+    Platform6.add();
+    const Platform7 = new Platform(1000, 300, 300, 50);
+    Platform7.add();
     const myPlayer = new blob()
     myPlayer.add();
 }
